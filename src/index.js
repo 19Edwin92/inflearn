@@ -1,24 +1,34 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './index.css'
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
 // import Library from './chapter_03/Library';
 // import Clock from './chapter_04/Clock';
 // import Commentlist from './chapter_05/Commentlist';
-import NotificationList from './chapter_06 state/Notifocationlist';
+// import NotificationList from './chapter_06 state/Notifocationlist';
+import Accommodate from './chapter_07/Accommodate';
 
-//chapert06 state 사용하기
+//chapter07 useState 관련
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  // <React.StrictMode> 
-    <NotificationList />
-  // </React.StrictMode>
+  <React.StrictMode>
+    <Accommodate />
+  </React.StrictMode>
+);
+
+
+//chapert06 state 사용하기
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   // <React.StrictMode> 
+//     <NotificationList />
+//   // </React.StrictMode>
 
   // React.StrictMode => 리액트버전 18에서는 Strict Mode의 작동방식 때문에, 발생되는 오류로 2개씩 보여질 것인데, 
   // 실제 배포했을 때는 발생되지 않으며, 개발 중(Strict Mode)일 때만 발생되는 오류인데, 이를 각추처리해 주면 문제가 없이 잘 작동될 것이다. 
   //https://www.inflearn.com/questions/619705/notificationlist-jsx-챕터-6장-실습-내용-질문-동시에-2개씩-나옴
-);
+// );
 
 //chapter05 댓글 만들기
 // const root = ReactDOM.createRoot(document.getElementById('root'));
